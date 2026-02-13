@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Cabral - Senior Software Engineer. Mercado Libre Backend Specialist.">
+    <title>David Cabral | Backend Architect</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- Canvas for Background Effects -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">DC<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h4 class="mono-text accent">Hi, my name is</h4>
+            <h1 class="big-heading gradient-title">David Cabral.</h1>
+            <h2 class="big-heading muted">Engineering the Backend of Tomorrow.</h2>
+            <p class="hero-desc">
+                Soy un Ingeniero de Software especializado en construir sistemas resilientes a escala para Mercado
+                Libre.
+                Pasión por la arquitectura, obsesión por el rendimiento.
+            </p>
+            <a href="#contact" class="btn btn-primary">Hablemos</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="mono-text">01.</span> Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Soy un Ingeniero de Software apasionado por transformar desafíos complejos de negocio en
+                        arquitecturas técnicas robustas y escalables.
+                        En mi rol actual dentro del equipo de <strong>Factors en Mercado Libre</strong>, tengo la
+                        responsabilidad de diseñar y mantener la columna vertebral de la autenticación de
+                        <strong>Mercado Pago</strong>, asegurando que millones de transacciones diarias ocurran de
+                        manera segura y sin interrupciones.
+                    </p>
+                    <p>
+                        Mi filosofía de desarrollo va más allá del código: creo en construir sistemas que no solo
+                        funcionen, sino que sean <strong>resilientes por diseño</strong>.
+                        Me especializo en orquestar microservicios de alto tráfico utilizando <span
+                            class="highlight">Kotlin, Python y Java</span>, implementando patrones avanzados de
+                        confiabilidad (Circuit Breakers, Rate Limiting, Failover Strategies) que permiten a las
+                        aplicaciones sobrevivir y prosperar bajo presión extrema.
+                    </p>
+                    <p>
+                        Busco constantemente empujar los límites de lo posible en el desarrollo Backend, creando
+                        soluciones que definan el estándar de la industria.
+                    </p>
+                    <p>Aqui algunas tecnologías con las que trabajo:</p>
+                    <ul class="skills-list mono-text">
+                        <li>Kotlin & Java</li>
+                        <li>Python</li>
+                        <li>AWS / GCP</li>
+                        <li>High-Concurrency KVS</li>
+                        <li>DataDog & ELK</li>
+                        <li>SQL & NoSQL</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <pre><code class="language-kotlin">
+fun buildResilientSystem() {
+  val architecture = Microservices(
+    scalability = HIGH,
+    resilience = CircuitBreaker.ENABLED
+  )
+  
+  while (traffic.isHigh()) {
+    architecture.scale()
+    monitoring.observe(metrics)
+  }
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="mono-text">02.</span> Dónde he trabajado</h2>
+            <div class="experience-tabs">
+                <div class="tab-list">
+                    <button class="tab-btn active" data-target="meli">Mercado Libre</button>
+                    <button class="tab-btn" data-target="tsoft">Tsoft</button>
+                </div>
+                <div class="tab-content" id="meli" style="display: block;">
+                    <h3 class="role-title">Software Engineer (Backend) <span class="company">@ Mercado Libre</span></h3>
+                    <p class="role-range mono-text">Presente (+3 Años)</p>
+                    <ul class="role-desc">
+                        <li>Desarrollo y mantenimiento de factores de autenticación críticos para Mercado Pago.</li>
+                        <li>Implementación de resiliencia (Rate Limiting, Circuit Breakers) en servicios de alto
+                            throughput.</li>
+                        <li>Gestión de deploys seguros (Canary, Blue/Green) en AWS y GCP.</li>
+                        <li>Optimización de bases de datos relacionales, NoSQL y KVS (Key-Value Stores).</li>
+                        <li>Monitoreo y observabilidad avanzada con DataDog, Grafana y Kibana.</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="tsoft" style="display: none;">
+                    <h3 class="role-title">Software Engineer <span class="company">@ Tsoft</span></h3>
+                    <p class="role-range mono-text">1 Año</p>
+                    <ul class="role-desc">
+                        <li>Desarrollo de soluciones de software y automatización.</li>
+                        <li>Colaboración en equipos ágiles para la entrega de valor al cliente.</li>
+                        <li>Participación en el ciclo completo de desarrollo de software.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills / What I Do Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="mono-text">03.</span> Tech Stack & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">🚀</div>
+                    <h3>Backend Core</h3>
+                    <p>Kotlin, Java, Python. Arquitectura de Microservicios, REST APIs.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Reliability</h3>
+                    <p>Circuit Breakers, Allow Lists, Rate Limits, Feature Flags.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">☁️</div>
+                    <h3>Cloud & Ops</h3>
+                    <p>AWS, GCP, Docker, Kubernetes, CI/CD Pipelines.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">📊</div>
+                    <h3>Data & Observability</h3>
+                    <p>SQL, NoSQL, BigQueue, DataDog, Grafana, NewRelic.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">💻</div>
+                    <h3>Dev Environment</h3>
+                    <p>Cross-platform proficiency (Linux/Unix, macOS, Windows). Advanced Git workflows (GitHub/GitLab
+                        CI).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section text-center">
+        <div class="container">
+            <h2 class="section-title center-line"><span class="mono-text">04.</span> What's Next?</h2>
+            <h1 class="big-heading">Hablemos</h1>
+            <p class="contact-desc">
+                Siempre estoy abierto a discutir nuevas oportunidades, arquitecturas interesantes o simplemente
+                conectar.
+            </p>
+            <a href="mailto:davidcabral12@gmail.com" class="btn btn-primary big-btn">Contactar</a>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cabral-david12/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/DavidCabral316" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="mono-text">Designed & Built by David Cabral</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/visuals.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
